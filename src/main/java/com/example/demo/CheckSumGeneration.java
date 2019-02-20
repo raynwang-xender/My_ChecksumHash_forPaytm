@@ -14,20 +14,17 @@ public class CheckSumGeneration {
     public static String INDUSTRY_TYPE_ID = "Retail";
     public static String CHANNLE_ID = "WAP";
     public static String WEBSITE = "APP_STAGING";
-//    public static String REVERIFY_URL = "https://pguat.paytm.com/oltp/HANDLER_INTERNAL/getTxnStatus?";
     public static String CALLBACK_URL = "http://192.168.10.91:9999/callback";
-//    public static String PAYMENT_MODE_ONLY = "YES";
-//    public static String PAYMENT_TYPE_ID = "DC";
-//    public static String AUTH_MODE = "3D";
 
     //Below parameters provide by Paytm for Product
     static {
         if (isProduct) {
-            MID = "xender87809192798508";  //ONIONm00999354646325 xender87809192798508
-            MercahntKey = "A3VG@Ao7CeW0l01t";//67g_Dq9bfRyTt4i A3VG@Ao7CeW0l01t
+            MID = "ONIONm00999354646325";  //ONIONm00999354646325 xender87809192798508
+            MercahntKey = "67g_Dq9bfRyTt4i&";//67g_Dq9bfRyTt4i& A3VG@Ao7CeW0l01t
             INDUSTRY_TYPE_ID = "Retail92";
             CHANNLE_ID = "WAP";//WAP WEB
-            WEBSITE = "APPPROD";  //ONIONmWAP ONIONmWEB backup:APPPROD WEBPROD xender paytm retail
+            WEBSITE = "ONIONmWAP";  //ONIONmWAP ONIONmWEB backup:APPPROD WEBPROD xender paytm retail
+            //WAP和WEB完全没影响 你麻痹
 //            REVERIFY_URL = "https://secure.paytm.in/oltp/HANDLER_INTERNAL/getTxnStatus?";
 //            PAYMENT_MODE_ONLY = "YES";
 //            PAYMENT_TYPE_ID = "DC";

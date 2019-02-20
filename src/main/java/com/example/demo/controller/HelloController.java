@@ -26,7 +26,7 @@ public class HelloController {
         String custid = cid;
         String txnamount = amount;
         String email = "gaurav.rawat@onionmobi.com";
-        String mobileno = "8882161616";
+        String mobileno = "8929254381";
 
         TreeMap<String,String> treeMap = CheckSumGeneration.generate(orderid, custid, txnamount, email, mobileno);
 
@@ -58,7 +58,6 @@ public class HelloController {
 
 
     @RequestMapping(value = "/native")
-//    public HashMap<String,String> hello(final HttpServletRequest request){
     public String hello(
             @RequestParam(value = "body") String body
     ){
@@ -66,7 +65,7 @@ public class HelloController {
         System.out.println("---Rayn body:"+body);
 
         try {
-            String checksum =CheckSumServiceHelper.getCheckSumServiceHelper().genrateCheckSum("6IN4N_7TbCjZawj1",body);//67g_Dq9bfRyTt4i&
+            String checksum =CheckSumServiceHelper.getCheckSumServiceHelper().genrateCheckSum("6IN4N_7TbCjZawj1",body);
             return checksum;
         } catch (Exception e) {
             e.printStackTrace();
